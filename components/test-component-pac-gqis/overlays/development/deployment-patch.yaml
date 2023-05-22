@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-pac-gqis
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas_quay_org/build-e2e-znzb-tenant/build-suite-test-application-kpyb/test-component-pac-gqis@sha256:837d97bee2d74f437203e6fa7b46e605d742d231990464a1b92d99bfbebdaf36
+        name: my-nginx
+        resources: {}
+status: {}
